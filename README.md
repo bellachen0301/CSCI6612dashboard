@@ -56,10 +56,9 @@ Upload your data and visualize time series trends.
 Decompose the series to identify residuals.
 Select parameters for the ARIMA model and fit it to your data.
 
-## Support & Reference
+## Reference
 
-For additional guidance and support, refer to the accompanying article on Medium. 
+This Project is refered to the accompanying article on Medium. 
 Supporting article: [available on Medium](https://medium.com/towards-data-science/time-series-data-analysis-with-sarima-and-dash-f4199c3fc092)
-The model is slight different, instead of ARIMA, it is using the SARIMA model.
 This article provides an overview of the application's functionality and underlying concepts.
 

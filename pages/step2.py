@@ -81,16 +81,7 @@ layout = dbc.Container([
         ], width=1),  # Adjusted width
 
     ], className='row-content'),
-
-    # Augmented Dickey-Fuller test
-    # dbc.Row([
-    #     dbc.Col([], width = 3),
-    #     dbc.Col([html.P(['Augmented Dickey-Fuller test: '], className='par')], width = 2),
-    #     dbc.Col([
-    #         dcc.Loading(id='p2-1-loading', type='circle', children=html.Div([], id = 'stationarity-test'))
-    #     ], width = 4),
-    #     dbc.Col([], width = 3)
-    # ]),
+    
     # Graphs
     dbc.Row([ 
         dbc.Col([
@@ -115,11 +106,6 @@ layout = dbc.Container([
 
 ### PAGE CALLBACKS ###############################################################################################################
 
-
-
-
-#################
-# Apply transformations to the data
 
 @callback(
     Output('feature-selector', 'options'),

@@ -9,11 +9,6 @@ dash.register_page(__name__, path='/', name='Home', title='DH | Home')
 # buoys data
 buoys = pd.read_csv('data/buoys.csv')
 
-# fig = go.Figure(go.Scattermapbox(
-#     mode = "markers",
-#     lon = buoys['lon'], lat = buoys['lat'],
-#     marker = {'size': 20, 'symbol': "cross"},
-#     ))
 fig = px.scatter_mapbox(buoys, lat="lat", lon="lon", hover_name="id", hover_data={"id": False, "lat": True, "lon": True, "size": False}, size="size", size_max=10,  # Increase the size of the points
                         color_discrete_sequence=["BLUE"], zoom=9, height=600, width=600)
 fig.update_layout(mapbox_style="open-street-map", mapbox_center={"lat": 44.6488, "lon": -63.5752})
@@ -42,7 +37,7 @@ layout = dbc.Container([
         dbc.Col([
             dcc.Graph(
                 id='map-plot',  # id for the map
-                figure=fig,  # 
+                figure=fig,  
             )
         ], width={'size': 6, 'offset': 3},  # Center the map horizontally
             className='text-center', 

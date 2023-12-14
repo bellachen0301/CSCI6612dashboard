@@ -72,7 +72,6 @@ def update_graph(selected_buoy):
         fig = make_subplots(rows=rows, cols=3, subplot_titles=[name for name in data_table['Column Names']])  # Exclude 'time' column
 
         # Fill in the subplots with line charts or box plots for each column
-    # Fill in the subplots with box plots for each column
         for i, column_name in enumerate(data_table['Column Names'], start=1):
             row = (i - 1) // 3 + 1
             col = (i - 1) % 3 + 1
@@ -102,8 +101,8 @@ def update_graph(selected_buoy):
             font=dict(color='white'),  # White text
         )
         # Update axes colors and remove gridlines
-        #fig.update_xaxes(showline=False, linewidth=1, linecolor='white', gridcolor='grey', showgrid=False)
-        #fig.update_yaxes(showline=False, linewidth=1, linecolor='white', gridcolor='grey', showgrid=False)
+        fig.update_xaxes(showline=True, linewidth=1, linecolor='white', gridcolor='grey', showgrid=False)
+        fig.update_yaxes(showline=True, linewidth=1, linecolor='white', gridcolor='grey', showgrid=False)
         return fig
     except Exception as e:
         print(f"Error: {e}")
