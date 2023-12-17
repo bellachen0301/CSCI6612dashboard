@@ -21,6 +21,10 @@ cd your-repo-name
 
 #### Create a Virtual Environment
 It is recommended to create a virtual environment to manage the dependencies for the project.
+<br>Start with creating the virtual environment.
+```sh
+python -m venv venv
+```
 
 On Windows:
 ```sh
