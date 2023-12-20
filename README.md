@@ -1,6 +1,6 @@
 # Time Series Analysis Web Application with ARIMA and Dash
 
-This web application is designed to guide users through the process of analyzing time series data and fitting an ARIMA model for making predictions. Built with Plotly Dash and Python, it offers an interactive environment to visualize data trends, seasonal patterns, and forecast future values.
+This web application is designed to guide users through the process of analyzing time series data and fitting an ARIMA model for making predictions. Built with Plotly Dash and Python, it offers an interactive environment to visualize data trends and forecast future values.
 
 ## Getting Started
 
